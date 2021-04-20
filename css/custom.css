@@ -85,13 +85,13 @@ body {
 
 
 div.b {
-	color: #E9967A;
-	font-size: 400%;
-	font-weight: bold;
+  color: #E9967A;
+  font-size: 400%;
+  font-weight: bold;
 }
 
 div.c {
-	color: #000000;
+  color: #000000;
 }
 
 /* Header Navigation All */
@@ -137,7 +137,7 @@ div.c {
 
 /* Footer */
 .footer {
-	padding-top: 100px;
+  padding-top: 100px;
 }
 
 /* Cards */
@@ -198,6 +198,10 @@ div.c {
   height: 30px;
 }
 
+.btn-bay {
+  background-color: grey;
+}
+
 /* Employee Button Home Page */
 .employee-btn {
   padding-bottom: 10px;
@@ -208,6 +212,17 @@ div.c {
   padding-top: 30px;
 }
 
+.lowbutton {
+  background-color: #9ABE6F;
+}
+
+.mediumbutton {
+  background-color: #688B9A;
+}
+
+.highbutton {
+  background-color: #FFCC33;
+}
 
 .progress1 {
   width: 10%;
@@ -283,6 +298,10 @@ div.c {
 
 .home {
   padding-top: 25px;
+}
+
+.modalbay {
+  height: 200px;
 }
 
 
@@ -429,14 +448,13 @@ input:checked + .slider:before {
 
 /* Scrolling Note Sticky*/
 .sticky {
- 
+  background: white;
   position: fixed;
-  top: 65px;
+  top: 0;
   right: 0;
- 
+  background-color: #fcf1d1;
   padding: 50px;
 }
-
 
 .homepage {
   background-color: white;
