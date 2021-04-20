@@ -97,7 +97,7 @@ div.c {
 /* Header Navigation All */
 .headernav {
   padding-top:6px;
-     background-color: white;
+    
 }
 
 /* Logo */
@@ -438,3 +438,19 @@ input:checked + .slider:before {
 }
 
 
+.homepage {
+  background-color: white;
+}
+
+
+.searchicon {
+  padding-right: 15px;
+}
+
+.calendaricon {
+  padding-right: 15px;
+}
+
+.logouticon {
+  padding-right: 15px;
+}
