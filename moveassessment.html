@@ -1,0 +1,1241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Green Valley Auctions">
+      <meta name="author" content="Lindsey McKim, Ana Hart">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Valley Move Assessment Form</title>
+
+    <!-- Bootstrap v4.4.1 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="css/custom.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/92cf74d3dd.js" crossorigin="anonymous"></script>
+
+  </head>
+
+   <!-- FORM NAV STARTS HERE !-->
+  <body>
+<br>
+    <header class="row col-md-12"> <!-- Logo Starts Here -->
+        <nav class="justify-content-left"> <!-- header starts here - nav pills -->
+           
+          
+              <div class="row col-md-12">
+                   <div class="col-md-1">
+                    <a class="nav-link" href="profile1.html">Profile</a>
+                 </div>
+
+
+            <div class="col-md-2 offset-md-1">
+             <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> General
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="newclientform.html">Initial Conversation</a>
+                <a class="dropdown-item" href="customerhistory.html">Customer History</a>
+              </div>
+            </div>
+            </div>
+                  
+            <div class="col-md-1 offset-md-0">
+             <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Move
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="intakeform.html">Intake Form</a>
+                <a class="dropdown-item" href="moveassessment.html">Move Assessment</a>
+                <a class="dropdown-item" href="movingform.html">Moving Form</a>
+                <a class="dropdown-item" href="#">Move Assessment</a>
+                <a class="dropdown-item" href="moveschedulescreenform.html">Move Schedule</a>
+                <a class="dropdown-item" href="moveserviceorder.html">Move Service</a>
+                <a class="dropdown-item" href="completeservice.html">Complete Service</a>
+                <a class="dropdown-item" href="completionform.html">Completion Form</a>
+                <a class="dropdown-item" href="invoiceform.html">Invoice Form</a>
+              </div>
+            </div>
+            </div>
+
+            <div class="col-md-1 offset-md-1">
+             <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Auction
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="intakeform.html">Intake Form</a>
+                <a class="dropdown-item" href="auctionassessment.html">Auction Assessment</a>
+                <a class="dropdown-item" href="auctionschedule.html">Auction Schedule</a>
+                <a class="dropdown-item" href="auctionserviceorder.html">Auction Service Order</a>
+                <a class="dropdown-item" href="auctionpickupform.html">Auction Pick Up Form</a>
+                <a class="dropdown-item" href="appraisalserviceorder.html">Appraisal Service Order</a>
+                <a class="dropdown-item" href="inventoryform.html">Inventory</a>
+                <a class="dropdown-item" href="addinventory.html">Add Inventory</a>
+                <a class="dropdown-item" href="completeservice.html">Complete Service</a>
+                <a class="dropdown-item" href="completionform.html">Completion Form</a>
+                <a class="dropdown-item" href="consignmentcontract.html">Consignment Contract</a>
+                <a class="dropdown-item" href="invoiceform.html">Invoice Form</a>
+                
+              </div>
+            </div>
+            </div>
+            
+
+              <div class="col-md-1 offset-md-1">
+             <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Service Ticket
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="createservice.html">Create Service</a>
+                <a class="dropdown-item" href="editserviceticket.html">Edit Service Ticket</a>
+              </div>
+            </div>
+            </div>
+
+        <!-- Button trigger modal -->
+        <div class="col-md-1 offset-md-2">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+        Schedule
+      </button>
+      </div>
+      </div>     
+      </nav>
+      </header>
+    
+    <br>
+
+
+        <!-- SCHEDULING MODAL STARTS HERE-->
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"  aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title text-center" id="exampleModalLongTitle">Scheduling</h3>
+
+
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+
+            <!-- Customer Name -->
+                  <div class="modal-body">
+                  <div class="row">
+                  <div class="col-md-4">
+                    <p> Customer Name </p> </div></div></div>
+       
+                   <br>
+
+
+          <!-- Service Being Scheduled -->
+                  <div class="row col-md-12">
+                  <div class="col-md-6">
+                  <p> Service Being Scheduled: </p>
+                  </div>
+                  <div class="col-md-6">
+            <select class="form-control" id="sel1">
+              <option>Move Assessment</option>
+              <option>Auction Walk Through</option>
+              <option>Packing</option>
+              <option>Move</option>
+              <option>Auction Pick Up</option>
+              <option>Auction Bring In</option>
+              <option>Appraisal</option>
+              <option>Consignment Shop Pick Up</option>
+              <option>Consignment Shop Bring In</option>
+              <option>Trash Removal</option>
+            </select>
+          </div>
+        </div>
+
+          <br>
+          <!-- Potential Dates -->
+          <div class="row col-md-12">
+       <div class="heading col-md-9">
+        <p>Potential Dates</p>
+        </div>
+      </div>
+          <div class="row col-md-12">
+            <div class="col-md-3">
+          <p> Option 1</p>
+            </div>
+          <div class="col-md-4">
+              <input type="text" class="form-control" placeholder="DATE">
+            </div>
+        <div class="col-md-4">
+              <input type="text" class="form-control" placeholder="TIME">
+            </div>
+          </div>
+
+          <br>
+
+         <div class="row col-md-12">
+            <div class="col-md-3">
+          <p> Option 2</p>
+            </div>
+          <div class="col-md-4">
+              <input type="text" class="form-control" placeholder="DATE">
+            </div>
+        <div class="col-md-4">
+              <input type="text" class="form-control" placeholder="TIME">
+            </div>
+          </div>
+
+          <br>
+          <div class="row col-md-12">
+            <div class="col-md-3">
+          <p> Option 3</p>
+            </div>
+          <div class="col-md-4">
+              <input type="text" class="form-control" placeholder="DATE">
+            </div>
+        <div class="col-md-4">
+              <input type="text" class="form-control" placeholder="TIME">
+            </div>
+          </div>
+
+          <br>
+          <br>
+
+          <div class="row col-md-12">
+            <div class="col-md-3">
+          <p> Final Date</p>
+            </div>
+          <div class="col-md-4">
+              <input type="text" class="form-control" placeholder="DATE">
+            </div>
+        <div class="col-md-4">
+              <input type="text" class="form-control" placeholder="TIME">
+            </div>
+          </div>
+      
+
+          <br>
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+  <!-- SCHEDULING MODAL ENDS HERE -->
+
+   <!-- FORM NAV ENDS HERE !-->
+
+<!-- Heading -->
+     <div class="text-center">
+        <h3> Move Assessment </h3>
+      </div>
+<br>
+
+
+    <!-- Note Body -->
+
+<div class="sticky">
+  <div class="text-left">
+      <h3> Notes:</h3>
+    </div>
+    <form>
+      <div class="form-group">
+    <label class= "Additional Notes"> </label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="20" placeholder="The item we are handling is an ancient relic from the 10th century of Mongolia."></textarea>
+  </div>
+</form>
+</div>
+
+
+
+
+<div class="col-md-12">
+<div class="heading">
+      <h3> Contact Information </h3>
+    </div>
+
+
+		<form>
+        <div class="form-row">
+        <div class="col-md-4 mb-3 mt-2">
+        <input type="text" class="form-control" id="validationDefault01" placeholder="FIRST NAME" required>
+    </div>
+
+        <div class="col-md-4 mb-3 mt-2">
+        <input type="text" class="form-control" id="validationDefault02" placeholder="LAST NAME" required>
+    </div>
+    </div>
+  
+
+        <div class="form-row">
+        <div class="col-md-4 mb-3">
+        <input type="text" class="form-control" id="validationDefault03" placeholder="PHONE NUMBER" required>
+    </div>
+
+    <div class="col-md-2 mb-3">
+      <input type="text" class="form-control" id="validationDefault04" placeholder="CONTACT DATE" required>
+    </div>
+    <div class="col-md-2 mb-3">
+      <input type="text" class="form-control" id="validationDefault05" placeholder="ADD ON" required>
+  </div>
+
+
+    <div class="col-md-8 mb-3">
+    <textarea class="form-control" id="validationTextarea" placeholder="FROM ADDRESS " required></textarea>
+  </div>
+
+  <div class="col-md-8 mb-3">
+    <textarea class="form-control" id="validationTextarea1" placeholder="TO ADDRESS " required></textarea>
+  </div>
+
+      </div>
+  </form>
+</div>
+
+<br>
+
+<!-- Preliminary Move Assessment !-->
+  <div class="heading">
+      <h3> Preliminary Move Assessment </h3>
+    </div>
+
+
+       <div class="col-md-6">
+          <p> What is the date your have to be out of your current address? </p>
+            </div>
+          <div class="col-md-8">
+          <form>
+          <label class= "Additional Notes"> </label>
+          <textarea class="form-control" id="exampleFormControlTextarea2" rows="2" placeholder=""></textarea>
+      	</form>
+      </div>
+
+            <br>
+            <br>
+
+          <div class="col-md-6">
+          <p> What is the window of days you can move? </p>
+            </div>
+          <div class="col-md-8">
+          <form>
+          <label class= "Additional Notes"> </label>
+          <textarea class="form-control" id="exampleFormControlTextarea3" rows="2" placeholder=""></textarea>
+      	</form>
+      </div>
+
+          <br>
+          <br>
+
+
+ 			<div class="col-md-6">
+          <p> What is the address you are moving to? </p>
+            </div>
+          <div class="col-md-8">
+          <form>
+          <label class= "Additional Notes"> </label>
+          <textarea class="form-control" id="exampleFormControlTextarea4" rows="2" placeholder=""></textarea>
+      	</form>
+      </div>
+
+          <br>
+          <br>
+
+
+	<!-- MLS Listing -->
+
+	      <div class="row col-md-8">
+	        <p> Is there a MLS Listing? </p>
+	      <div class="form-check form-check-inline lookat">
+	        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+	        <label class="form-check-label">Yes</label>
+	      </div>
+	      <div class="form-check form-check-inline">
+	        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+	        <label class="form-check-label">No</label>
+	      </div>
+	      </div>
+	    
+
+	   <br>
+	   <br>
+
+	   <!-- Photos -->
+
+	      <div class="row col-md-12">
+	        <p> Can you send photos if we need them? </p>
+	      <div class="form-check form-check-inline lookat">
+	        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+	        <label class="form-check-label">Yes</label>
+	      </div>
+	      <div class="form-check form-check-inline">
+	        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+	        <label class="form-check-label">No</label>
+	      </div>
+	      </div>
+
+	    
+
+	   <br>
+	   <br>
+
+
+	   <!-- Additional Services !-->
+          <div class="row col-md-12">
+            <div class="col-md-12">
+          <p> Do you need add on services? </p>
+            </div>
+          </div>
+  
+           <!-- Move !-->
+            <div class="col-md-12">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Packing</label>
+            </div>
+          </div>
+
+
+          <!-- Trash Removal & Donation Hauling !-->
+            <div class="col-md-12">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="group2" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" id="inlineCheckbox3" value="option3">
+                  
+                <div class="panel panel-default">
+            <div class="panel-heading">
+                  <label class="form-check-label" for="inlineCheckbox3">Trash Removal &#38; Donation Hauling</label>
+           		</div>
+              </div>
+            </div>
+        </div>
+             <div id="collapseOne" class="panel-collapse collapse in">
+                <div class="panel-body">
+		         <div class="row col-md-12">
+		         <div class="col-md-2 mt-4 offset-md-0">
+		      	<p> Trash Description: </p></div>
+		     <div class="col-md-6">
+	    		<form>
+	      		<div class="form-group">
+			    <label class= "Additional Notes"> </label>
+			    <textarea class="form-control" id="exampleFormControlTextarea5" rows="6" placeholder=""></textarea>
+				  	</div>
+				</form>
+			</div>
+		</div>  
+		</div>
+		</div>
+        
+
+          
+
+          <br>
+          <br>
+
+          <!-- Auction Services? !-->
+		  <div class="row col-md-12">
+		  	<div class="col-md-5">
+		      <p> Do you need auction services? </p></div>
+	        <div class="row col-md-6 mt-2">
+        <div class="col-md-6">
+	         <a class="btn btn-primary btn-intake rounded-pill" href="editserviceticket.html" role="button">Auction Service Ticket</a> 
+	         </div>    
+	    	</div>
+	    	</div>
+
+	   <br>
+	   <br>
+
+
+			 <!-- House Layout !-->
+        			 <div class="row">
+              <h3> House Layout </h3>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2">
+            <p> Stories </p>
+          </div>
+            <div class="col-md-4">
+                      <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            1
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">2</a>
+            <a class="dropdown-item" href="#">3</a>
+            <a class="dropdown-item" href="#">4</a>
+          </div>
+        </div>
+        </div>
+        </div>
+
+        <br>
+
+         <div class="row">
+              <div class="col-md-2">
+            <p> Bedrooms: </p>
+          </div>
+            <div class="col-md-2">
+                      <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            0
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">1</a>
+            <a class="dropdown-item" href="#">2</a>
+            <a class="dropdown-item" href="#">3</a>
+             <a class="dropdown-item" href="#">4</a>
+              <a class="dropdown-item" href="#">5</a>
+               <a class="dropdown-item" href="#">6</a>
+          </div>
+        </div>
+        </div>
+        <div class="col-md-3">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+          <div class="col-md-2">
+             <input type="text" class="form-control" placeholder="">
+             </div>
+
+              
+        </div>
+
+
+        <br>
+
+
+        <div class="row">
+              <div class="col-md-2">
+            <p> Living Room: </p>
+          </div>
+            <div class="col-md-2">
+                      <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdown3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            0
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">1</a>
+            <a class="dropdown-item" href="#">2</a>
+            <a class="dropdown-item" href="#">3</a>
+             <a class="dropdown-item" href="#">4</a>
+          </div>
+        </div>
+        </div>
+        <div class="col-md-3">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+          <div class="col-md-2">
+             <input type="text" class="form-control" placeholder="">
+             </div>
+
+        </div>
+
+        <br>
+
+
+        <div class="row">
+              <div class="col-md-2">
+            <p> Dining Room: </p>
+          </div>
+            <div class="col-md-2">
+                      <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdown4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            0
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">1</a>
+            <a class="dropdown-item" href="#">2</a>
+            <a class="dropdown-item" href="#">3</a>
+             <a class="dropdown-item" href="#">4</a>
+          </div>
+        </div>
+        </div>
+        <div class="col-md-3">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+          <div class="col-md-2">
+             <input type="text" class="form-control" placeholder="">
+             </div>
+
+        </div>
+
+        <br>
+
+
+        <div class="row">
+              <div class="col-md-2">
+            <p> Den/ Family Room: </p>
+          </div>
+            <div class="col-md-2">
+                      <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdown5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            0
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">1</a>
+            <a class="dropdown-item" href="#">2</a>
+            <a class="dropdown-item" href="#">3</a>
+             <a class="dropdown-item" href="#">4</a>
+          </div>
+        </div>
+        </div>
+        <div class="col-md-3">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+          <div class="col-md-2">
+             <input type="text" class="form-control" placeholder="">
+             </div>
+
+        </div>
+
+        <br>
+
+
+
+        <div class="row">
+        <div class="col-md-2">
+            <p> Attic: </p>
+          </div>
+            <div class="col-md-2">
+                      <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdown6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Yes
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">No</a>
+            
+          </div>
+        </div>
+        </div>
+        <div class="col-md-3">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+          <div class="col-md-2">
+             <input type="text" class="form-control" placeholder="">
+             </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+        <div class="col-md-2">
+            <p> Basement: </p>
+          </div>
+            <div class="col-md-2">
+                      <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdown7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Yes
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">No</a>
+            
+          </div>
+        </div>
+        </div>
+        <div class="col-md-3">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+          <div class="col-md-2">
+             <input type="text" class="form-control" placeholder="">
+             </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+        <div class="col-md-2">
+            <p> Garage: </p>
+          </div>
+            <div class="col-md-2">
+                      <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdown8" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Yes
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">No</a>
+            
+          </div>
+        </div>
+        </div>
+        <div class="col-md-3">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+          <div class="col-md-2">
+             <input type="text" class="form-control" placeholder="">
+             </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="row">
+                    <div class="col-md-2">
+                  <p> Total Square Footage: </p>
+                    </div>
+                  <div class="col-md-3">
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+                  
+                  </div>
+
+                  <br>
+
+
+	       
+          
+
+          <br>
+          <br>
+
+
+           <!-- Additional !-->
+			  <div class="col-md-12 heading">
+			      <h3> Additional </h3>
+			    </div>
+
+
+			  <div class="row">
+            <div class="col-md-2">
+          <p> Large, Awkward, Unusual Items: </p>
+            </div>
+          <div class="col-md-2">
+              <input type="text" class="form-control" placeholder="">
+            </div>
+          <div class="col-md-2">
+           <p> Collectibles and High Value Items: </p>
+        </div>
+        <div class="col-md-2">
+              <input type="text" class="form-control" placeholder="">
+            </div>
+          </div>
+
+          <br>
+
+          <div class="row">
+            <div class="col-md-2">
+          <p> Appliances: </p>
+            </div>
+          <div class="col-md-2">
+              <input type="text" class="form-control" placeholder="">
+            </div>
+          <div class="col-md-2">
+           <p> Out Buildings: </p>
+        </div>
+        <div class="col-md-2">
+              <input type="text" class="form-control" placeholder="">
+            </div>
+          </div>
+
+
+          <br>
+
+          <!-- Piano? !-->
+           <div class="row col-md-8">
+                <p> Piano: </p>
+              <div class="form-check form-check-inline lookat">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio12" value="option1">
+                <label class="form-check-label">Yes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio13" value="option2">
+                <label class="form-check-label">No</label>
+              </div>
+              
+              </div>
+            
+
+
+          <!-- Lawnmower !-->
+           <div class="row col-md-8">
+                <p> Lawnmower: </p>
+              <div class="form-check form-check-inline lookat">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio14" value="option1">
+                <label class="form-check-label">Yes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio15" value="option2">
+                <label class="form-check-label">No</label>
+              </div>
+              
+              </div>
+            
+         
+          <br>
+          <br>
+
+
+
+
+	<!--Have we asked for !-->
+          <div class="row col-md-12">
+            <div class="col-md-6">
+          <p> Asked For </p>
+            </div>
+          </div>
+  
+           <!-- Photos !-->
+            <div class="col-md-6">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox112" value="option1">
+              <label class="form-check-label" for="inlineCheckbox112">Photos</label>
+            </div>
+          </div>
+
+
+         <!-- List of Items !-->
+            <div class="col-md-6">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox114" value="option1">
+              <label class="form-check-label" for="inlineCheckbox114">List of Items</label>
+            </div>
+          </div>
+  <br>
+  <br>
+
+
+
+  <!-- Additional Services !-->
+          <div class="row col-md-12">
+            <div class="col-md-6">
+          <p> Additional Services </p>
+            </div>
+          </div>
+  
+           <!-- Move !-->
+            <div class="col-md-6">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox116" value="option1">
+              <label class="form-check-label" for="inlineCheckbox116">Move</label>
+            </div>
+          </div>
+
+          <!-- Appraisal !-->
+            <div class="col-md-6">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox118" value="option1">
+              <label class="form-check-label" for="inlineCheckbox118">Appraisal</label>
+            </div>
+          </div>
+
+
+          <!-- Trash Removal & Donation Hauling !-->
+            <div class="col-md-6">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="group2" data-toggle="collapse" data-parent="#accordion" href="#collapseThirteen" id="inlineCheckbox120" value="option3">
+                  
+                <div class="panel panel-default">
+            <div class="panel-heading">
+                  <label class="form-check-label" for="inlineCheckbox120">Trash Removal &#38; Donation Hauling</label>
+           		</div>
+              </div>
+            </div>
+        </div>
+             <div id="collapseThirteen" class="panel-collapse collapse in">
+                <div class="panel-body">
+		         <div class="row col-md-12">
+		         <div class="col-md-2 mt-4 offset-md-0">
+		      	<p> Trash Description: </p></div>
+		     <div class="col-md-6">
+	    		<form>
+	      		<div class="form-group">
+			    <label class= "Additional Notes"> </label>
+			    <textarea class="form-control" id="exampleFormControlTextarea6" rows="6" placeholder=""></textarea>
+				  	</div>
+				</form>
+			</div>
+		</div>  
+		</div>
+		</div>
+        
+
+          
+
+          <br>
+          <br>
+
+
+		<!-- Auction Assessment !-->
+		  <div class="row col-md-12">
+		  	<div class="col-md-5">
+		      <h3> Auction Assessment </h3></div>
+	        <div class="row col-md-6 mt-2">
+        <div class="col-md-6">
+	         <a class="btn btn-primary btn-intake rounded-pill" href="inventoryform.html" role="button">Go to Inventory Form</a> 
+	         </div>    
+	    	</div>
+	    	</div>
+
+	   <br>
+
+
+
+	   <!-- Type of Home !-->
+          <div class="row col-md-12">
+            <div class="col-md-6">
+          <p> Type of Home </p>
+            </div>
+          </div>
+
+           <!-- Apartment !-->
+           <div class="col-md-6">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="group3" data-toggle="collapse" data-parent="#accordion" href="#collapseFourteen" id="inlineCheckbox122" value="option4">
+                  
+                <div class="panel-group">
+                <div class="panel panel-default">
+                <div class="panel-heading">
+                  <label class="form-check-label" for="inlineCheckbox122">Apartment</label>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+              <div id="collapseFourteen" class="panel-collapse collapse in">
+                <div class="panel-body">
+            <div class="row col-md-12">
+            <div class="col-md-2 offset-md-1">
+          	<p> What Floor: </p>
+            </div>
+          	<div class="col-md-4">
+             <input type="text" class="form-control" placeholder="">
+            </div>  
+          	</div>
+         
+         <br>
+
+                <div class="row col-md-12 offset-md-1">
+                <p> Is there an elevator? </p>
+              <div class="form-check form-check-inline lookat">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option1">
+                <label class="form-check-label">Yes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option2">
+                <label class="form-check-label">No</label>
+              </div>
+              
+              </div>
+            </div>
+
+            <br>
+
+            <div class="row col-md-12 offset-md-1">
+            <p> How Far is the walk from the elevator to the apartment? </p></div>
+          
+            <div class="col-md-6 offset-md-1">
+             <input type="text" class="form-control" placeholder="">
+            </div>  
+    
+          </div>
+        
+                   
+      
+
+
+
+          <!-- House !-->
+            <div class="col-md-6">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox124" value="option1">
+              <label class="form-check-label" for="inlineCheckbox124">House</label>
+            </div>
+          </div>
+
+
+
+
+          <!-- Storage Unit !-->
+           <div class="col-md-6">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="group3" data-toggle="collapse" data-parent="#accordion" href="#collapseFifteen" id="inlineCheckbox126" value="option4">
+                  
+                <div class="panel-group">
+                <div class="panel panel-default">
+                <div class="panel-heading">
+                  <label class="form-check-label" for="inlineCheckbox126">Storage Unit</label>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+              <div id="collapseFifteen" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    <div class="form-check form-check-inline offset-md-1">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox128" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox128">Indoor/Climate Controlled</label>
+                    </div>
+                        <div class="form-check form-check-inline offset-md-1">
+                       <input class="form-check-input" type="checkbox" id="inlineCheckbox130" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox130">Outdoor Self Storage</label>
+                    </div>
+                   </div>
+                  </div>
+              
+
+
+<!-- Place of Business !-->
+            <div class="col-md-6">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="group2" data-toggle="collapse" data-parent="#accordion" href="#collapseSixteen" id="inlineCheckbox132" value="option3">
+                  
+                <div class="panel panel-default">
+            <div class="panel-heading">
+                  <label class="form-check-label" for="inlineCheckbox132">Place of Business</label>
+              </div>
+              </div>
+            </div>
+        </div>
+             <div id="collapseSixteen" class="panel-collapse collapse in">
+                <div class="panel-body">
+         <div class="col-md-6 offset-md-1">
+          <form>
+            <div class="form-group">
+          <label class= "Additional Notes"> </label>
+          <textarea class="form-control" id="exampleFormControlTextarea7" rows="6" placeholder=""></textarea>
+              </div>
+          </form>
+        </div>
+      </div>  
+      </div>
+
+          
+          
+         
+         <br>
+         <br>
+
+
+
+           <!-- Truck Accessibility -->
+            <div class="row col-md-12">
+                    
+              <p> Truck Accessibility: </p>
+            </div>
+             <div class="col-md-6">
+            <form>
+              <div class="form-group">
+            <label class= "Additional Notes"> </label>
+            <textarea class="form-control" id="exampleFormControlTextarea8" rows="6" placeholder=""></textarea>
+          </div>
+        </form>
+        </div>
+        
+
+        <br>
+        <br>
+
+
+    <!-- How far is walk to loading door? -->
+            <div class="row col-md-12">
+                    
+              <p> How far is the walk to the loading door? </p>
+            </div>
+             <div class="col-md-6">
+            <form>
+              <div class="form-group">
+            <label class= "Additional Notes"> </label>
+            <textarea class="form-control" id="exampleFormControlTextarea9" rows="6" placeholder=""></textarea>
+          </div>
+        </form>
+        </div>
+        
+
+
+        <br>
+        <br>
+
+
+
+  <!-- How far is walk to loading door? -->
+              <div class="row col-md-12">
+                      
+                <p> How many steps are there leading up to the house? </p>
+              </div>
+               <div class="col-md-6">
+              <form>
+                <div class="form-group">
+              <label class= "Additional Notes"> </label>
+              <textarea class="form-control" id="exampleFormControlTextarea10" rows="6" placeholder=""></textarea>
+            </div>
+          </form>
+          </div>
+          
+
+          <br>
+          <br>
+
+
+          <!-- Heading -->
+     <div class="text">
+        <h3> Reminder </h3>
+      </div>
+
+
+          <div class="row col-md-8">          
+                <p> Remind client to supply the following:</p> 
+                <p> 1) truck of appropriate size to hold all property. </p>
+                <p> 2) enough furniture pads to keep all furniture safe from damage.</p>
+                <p> 3) bands, straps, bungee cords for securing property during transit. GVA&M can rent pads and straps (local moves) for a fee of $30.00.</p>
+              </div>
+
+<br>
+		<br>
+
+
+        <!-- Special Equipment -->
+    <div class="row col-md-12">
+        <p> Special Equipment </p> </div>
+      <div class="row col-md-10">
+      <div class="form-check form-check-inline offset-md-0">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox134" value="option1">
+        <label class="form-check-label" for="inlineCheckbox134">Appliance Cart</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox136" value="option2">
+        <label class="form-check-label" for="inlineCheckbox136">Piano Dolly</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox137" value="option2">
+        <label class="form-check-label" for="inlineCheckbox137">Piano Board</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox138" value="option2">
+        <label class="form-check-label" for="inlineCheckbox138">Gun Safe Cart</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox139" value="option2">
+        <label class="form-check-label" for="inlineCheckbox139">Extra Blankets</label>
+      </div>
+      </div>
+
+      <br>
+
+
+      <!-- Trucks -->
+    <div class="row col-md-12">
+        <p> Trucks </p> </div>
+      <div class="row col-md-10">
+      <div class="form-check form-check-inline offset-md-0">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox140" value="option1">
+        <label class="form-check-label" for="inlineCheckbox140">2015</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox141" value="option2">
+        <label class="form-check-label" for="inlineCheckbox141">2011</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox142" value="option3">
+        <label class="form-check-label" for="inlineCheckbox142">Cube</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox143" value="option4">
+        <label class="form-check-label" for="inlineCheckbox143">Enclosed Trailer</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox144" value="option4">
+        <label class="form-check-label" for="inlineCheckbox144">Open Trailer</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox145" value="option6">
+        <label class="form-check-label" for="inlineCheckbox145">Van</label>
+      </div>
+      </div>
+
+      <br>
+      <br>
+
+
+        
+<!-- Estimated Rates & Fees -->
+      <div class="row col-md-12">
+        <p> Costing Out Move </p> </div>
+      
+      <div class="row col-md-12">
+            <div class="col-md-3 offset-md-1">
+          <p> Move Estimate: </p>
+            </div>
+          </div>
+
+          <br>
+
+      <div class="row col-md-12">
+            <div class="col-md-2 offset-md-1">
+          <p> Fixed Rate: </p>
+            </div>
+          <div class="col-md-4">
+              <input type="text" class="form-control" placeholder="">
+            </div>
+          </div>
+
+          <br>
+          
+          <div class="row col-md-12">
+            <div class="col-md-2 offset-md-1">
+          <p> Packing Fees: </p>
+            </div>
+          <div class="col-md-4">
+              <input type="text" class="form-control" placeholder="">
+            </div>
+          </div>
+
+             <br>
+
+          <div class="row col-md-12">
+            <div class="col-md-2 offset-md-1">
+          <p> Storage Fees: </p>
+            </div>
+          <div class="col-md-4">
+              <input type="text" class="form-control" placeholder="">
+            </div>
+          </div>
+
+             <br>
+
+          <div class="row col-md-12">
+            <div class="col-md-2 offset-md-1">
+          <p> Trash Removal: </p>
+            </div>
+          <div class="col-md-4">
+              <input type="text" class="form-control" placeholder="">
+            </div>
+          </div>
+
+
+
+	    	<br>
+	    	<br>
+	    	<br>
+	    	<br>
+
+        <!-- Save button -->  
+        <div class="row">
+          <div class ="col-md-3 offset-md-7">
+
+         <a class="btn btn-primary btn-intake rounded-pill" href="auctionassessment.html" role="button">Save</a>        
+    </div>
+
+  </div>
+  <br>
+  <br>  
+  
+  
+
+
+  
+
+
+
+
+
+
+		<!-- jQuery and Bootstrap links - do not delete! -->
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<!-- end of do not delete -->
+
+		
+
+
+	</body>
+
+</html>
